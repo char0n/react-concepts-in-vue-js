@@ -23,7 +23,7 @@
   export default {
     name: 'user-table',
     components: {
-      'user-table-row': UserTableRow,
+      UserTableRow,
     },
     props: {
       users: {

@@ -12,7 +12,7 @@
 
 
   export default {
-    name: 'user-table-row',
+    name: 'UserTableRow',
     props: {
       user: {
         type: Object,

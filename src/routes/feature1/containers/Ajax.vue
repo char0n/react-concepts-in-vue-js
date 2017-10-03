@@ -2,7 +2,7 @@
   <ajax
     :server-data="serverData"
     :server-data-fetching="serverDataFetching"
-    :onServerDataDownload="onServerDataDownload"
+    @server-data-load="onServerDataDownload"
   />
 </template>
 
@@ -15,7 +15,7 @@
 
   export default {
     components: {
-      ajax: Ajax,
+      Ajax,
     },
     computed: {
       ...mapGetters('feature1', {

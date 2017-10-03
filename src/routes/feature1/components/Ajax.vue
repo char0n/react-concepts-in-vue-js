@@ -3,7 +3,7 @@
     <h2>Feature 1</h2>
     <div>
       <button
-        @click="onServerDataDownload(params)"
+        @click="onServerDataDownload"
         :disabled="serverDataFetching"
       >
         Download data
@@ -30,14 +30,15 @@ export default {
       type: Boolean,
       default: false,
     },
-    onServerDataDownload: {
-      type: Function,
-      required: true,
-    },
   },
   computed: {
     params() {
       return { productId: 1 };
+    },
+  },
+  methods: {
+    onServerDataDownload() {
+      this.$emit('server-data-load', this.params);
     },
   },
 };

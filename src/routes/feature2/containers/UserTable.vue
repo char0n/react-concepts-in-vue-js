@@ -10,7 +10,7 @@
 
   export default {
     components: {
-      'user-table': UserTable,
+      UserTable,
     },
     computed: {
       ...mapGetters('feature2', {
