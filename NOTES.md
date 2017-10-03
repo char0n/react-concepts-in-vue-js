@@ -1,0 +1,7 @@
+- controlled mutations vs immutability
+- no way to intercept actions
+- mutation can be intercepted only after it has happened
+- html binding instead of pure refactorable js
+- actions names and getter names as strings instead of pure functions
+- multiple incopatible ways to dispatch actions/mutations (action creators are needed)
+- undocumented behavior mapMutations/mapActions (we can also pass a function)

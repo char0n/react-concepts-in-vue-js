@@ -1,6 +1,7 @@
 import Vuex from 'vuex';
 import Vue from 'vue';
 
+import feature1Plugin from '@/routes/feature1/plugin';
 import actions from './actions';
 import mutations from './mutations';
 import getters from './getters';
@@ -19,7 +20,9 @@ const store = new Vuex.Store({
   getters,
   actions,
   mutations,
-  plugins: [],
+  plugins: [
+    feature1Plugin(),
+  ],
 });
 
 

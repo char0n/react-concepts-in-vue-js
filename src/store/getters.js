@@ -17,6 +17,6 @@ export const globalPropLabelGetter = createGetter(
 
 
 export default {
-  globalPropGetter,
-  globalPropLabelGetter,
+  globalProp: globalPropGetter,
+  globalPropLabel: globalPropLabelGetter,
 };

@@ -23,11 +23,11 @@ export const createAction = (type, payloadCreator = identity) => {
 };
 
 // composes getters into combined getters
-export const createGetter = (...getters) => (state, allGetters) => {
+export const createGetter = (...getterList) => (state, getters, rootState, rootGetters) => {
   const getterValues = reduce((acc, getter) => {
-    acc.push(getter(state, allGetters));
+    acc.push(getter(state, getters, rootState, rootGetters));
     return acc;
-  }, [], init(getters));
+  }, [], init(getterList));
 
-  return apply(last(getters), getterValues);
+  return apply(last(getterList), getterValues);
 };
