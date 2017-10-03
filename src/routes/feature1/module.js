@@ -1,6 +1,7 @@
 import mutations from './mutations';
 import actions from './actions';
 import getters from './getters';
+import subfeature from './subfeature/module';
 
 
 const initialState = {
@@ -15,4 +16,7 @@ export default {
   mutations,
   actions,
   getters,
+  modules: {
+    subfeature,
+  },
 };

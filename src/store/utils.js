@@ -5,9 +5,9 @@ import { identity, always, pipe, reduce, init, last, apply } from 'ramda';
 // NOTE: the more correct name for this function is probably createMutationCreator(),
 // but that seems a bit redundant
 export const createMutation = (type, payloadCreator = identity) => {
-  const mutationCreator = pipe(payloadCreator, mergeRight({ type }));
+  const mutationCreator = pipe(payloadCreator, mergeRight({ type: String(type) }));
 
-  mutationCreator.toString = always(type);
+  mutationCreator.toString = always(String(type));
 
   return mutationCreator;
 };

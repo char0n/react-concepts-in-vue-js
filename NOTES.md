@@ -5,3 +5,8 @@
 - actions names and getter names as strings instead of pure functions
 - multiple incopatible ways to dispatch actions/mutations (action creators are needed)
 - undocumented behavior mapMutations/mapActions (we can also pass a function)
+- intercepting mutations from other features
+- namespaces creates more problems than it solves
+   - unique names for getter
+   - prefixes
+   - creating dispatchable mutations/actions in plugins
