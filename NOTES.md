@@ -8,5 +8,5 @@
 - intercepting mutations from other features
 - namespaces creates more problems than it solves
    - unique names for getter
-   - prefixes
+   - actions and mutations can be sloved by unique TYPES but not getters
    - creating dispatchable mutations/actions in plugins

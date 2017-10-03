@@ -22,6 +22,9 @@
       <li>
         <router-link to="feature1">Feature1 demonstration</router-link>
       </li>
+      <li>
+        <router-link to="feature2">Feature2 demonstration</router-link>
+      </li>
     </ul>
   </div>
 </template>
