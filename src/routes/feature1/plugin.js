@@ -1,4 +1,5 @@
 import module from './module';
+import subfeaturePlugin from './subfeature/plugin';
 
 import { SERVER_DATA_FAILURE } from './mutations';
 
@@ -16,6 +17,9 @@ const feature1Plugin = ({ namespace = 'feature1' } = {}) => (store) => {
       alert('Server data failed to fetch!'); // eslint-disable-line no-alert
     }
   });
+
+  // this is the place where we want to compose sub-features plugins
+  subfeaturePlugin()(store);
 };
 
 
