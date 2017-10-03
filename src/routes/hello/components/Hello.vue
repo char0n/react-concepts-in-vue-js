@@ -17,8 +17,13 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
+    <hr style="width: 40%" />
+    <ul>
+      <li>
+        <router-link to="feature1">Feature1 demonstration</router-link>
+      </li>
+    </ul>
   </div>
-
 </template>
 
 <script>
