@@ -10,3 +10,5 @@
    - unique names for getter
    - actions and mutations can be sloved by unique TYPES but not getters
    - creating dispatchable mutations/actions in plugins
+- nice module composition + grouping all state utils
+Best practices: https://github.com/pablohpsilva/vuejs-component-style-guide#harness-your-component-props
