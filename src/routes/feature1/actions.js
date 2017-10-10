@@ -14,19 +14,22 @@ export const FETCH_SERVER_DATA = 'FETCH_SERVER_DATA';
 /**
  * Action creators.
  */
+
 export const fetchServerData = createAction(FETCH_SERVER_DATA, objOf('params'));
 
 
 /**
  * Actions handlers.
  */
+
 export default {
   [fetchServerData]: (context) => {
     context.commit(requestServerData());
 
     const isSuccess = sample([true, false]);
+    const userCount = context.rootGetters['feature2/userCount'];
 
-    if (isSuccess) {
+    if (isSuccess && userCount > 0) {
       setTimeout(() => {
         context.commit(serverDataSuccess({ a: random(1, 100), b: random(1, 100) }));
       }, 1500);
