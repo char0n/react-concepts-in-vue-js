@@ -16,8 +16,8 @@ const initialState = {
 };
 
 
-const store = new Vuex.Store({
-  strict: true,
+const createStore = ({ strict = true } = {}) => new Vuex.Store({
+  strict,
   state: initialState,
   getters,
   actions,
@@ -29,4 +29,4 @@ const store = new Vuex.Store({
 });
 
 
-export default store;
+export default createStore;
