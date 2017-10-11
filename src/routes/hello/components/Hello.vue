@@ -26,18 +26,27 @@
         <router-link to="feature2">Feature2 demonstration</router-link>
       </li>
     </ul>
+    <hr style="width: 40%" />
+    <reusable1 namespace="reusable1" />
+    <reusable2 namespace="reusable2" />
   </div>
 </template>
 
 <script>
-export default {
-  name: 'hello',
-  data() {
-    return {
-      msg: 'Welcome to Your Vue.js App',
-    };
-  },
-};
+  import Reusable from '@/modules/reusable/containers/Reusable';
+
+  export default {
+    name: 'hello',
+    components: {
+      reusable1: Reusable,
+      reusable2: Reusable,
+    },
+    data() {
+      return {
+        msg: 'Welcome to Your Vue.js App',
+      };
+    },
+  };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

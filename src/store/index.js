@@ -3,6 +3,7 @@ import Vue from 'vue';
 
 import feature1Plugin from '@/routes/feature1/plugin';
 import feature2Plugin from '@/routes/feature2/plugin';
+import reusablePlugin from '@/modules/reusable/plugin';
 import actions from './actions';
 import mutations from './mutations';
 import getters from './getters';
@@ -25,6 +26,8 @@ const createStore = ({ strict = true } = {}) => new Vuex.Store({
   plugins: [
     feature1Plugin(),
     feature2Plugin(),
+    reusablePlugin({ namespace: 'reusable1' }),
+    reusablePlugin({ namespace: 'reusable2' }),
   ],
 });
 
