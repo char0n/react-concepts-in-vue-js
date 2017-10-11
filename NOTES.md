@@ -3,7 +3,7 @@
 - multiple incopatible ways to dispatch actions/mutations (action creators are needed)
 - undocumented behavior mapMutations/mapActions (we can also pass a function)
 - intercepting mutations from other features possible
-- namespaces creates more problems than it solves
+- namespaces
    - unique names for getter
    - actions and mutations can be solved by unique TYPES but not getters
    - creating dispatchable mutations/actions in plugins
@@ -18,6 +18,7 @@
   - it is possible to reuse getter inside actions
   - it is possible to compose getters natively
   - it is possible to watch to state changes
+- possibility to create whole encapsulated features 
 
 
 Best practices: https://github.com/pablohpsilva/vuejs-component-style-guide#harness-your-component-props
