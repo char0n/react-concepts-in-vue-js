@@ -14,8 +14,10 @@
   - mutation can be intercepted only after they have happened
   - no way to intercept mutation before it happens
   - no way to suppress mutation from commiting
-  - it is possible to resuse getter inside actions
-  - it is possible to compose getter natively
+  - no way to suppress action from dispatching
+  - it is possible to reuse getter inside actions
+  - it is possible to compose getters natively
+  - it is possible to watch to state changes
 
 
 Best practices: https://github.com/pablohpsilva/vuejs-component-style-guide#harness-your-component-props

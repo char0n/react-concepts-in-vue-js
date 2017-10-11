@@ -17,6 +17,7 @@ const initialState = {
 
 
 const store = new Vuex.Store({
+  strict: true,
   state: initialState,
   getters,
   actions,
